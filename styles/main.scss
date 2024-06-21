@@ -1,0 +1,21 @@
+/*!# All Needed Tools */
+@import './variables/shopify_assigns';
+@import './fonts/shopify_fonts';
+@import './variables/variables';
+@import './mixins/mixins';
+@import './general-styling/general';
+
+/*!# Styling Universal sections (Header,Footer..etc)*/
+@import './sections/announce_bars';
+//
+// THIS NEED CAREFUL ENHANCEMENT
+@import './versions/old';
+
+//Media Query
+@import './versions/english_media';
+
+//Arabic version of store
+html[lang="ar"] {
+    @import './versions/arabic_edits';
+    @import './versions/arabic_media';
+}

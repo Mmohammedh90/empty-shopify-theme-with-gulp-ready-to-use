@@ -1,0 +1,23 @@
+/*!#----*/
+/*!# Shopify Assign(s) > Announce Bar */
+/*!--{% assign _announce_bg_color = settings.anounce_bar_color %}--*/
+/*!--{% assign _announce_text_color = settings.anounce_bar_textcolor %}--*/
+/*!--{% assign _announce_font_size = settings.anounce_bar_fontsize %}--*/
+/*!--{% assign _announce_bold = settings.bar_content_bold %}--*/
+/*!--{% assign _announce_center = settings.bar_content_center %}--*/
+
+// fonts varaibles
+$font_heading_family: #{'"\{\{ font_heading.family \}\}"'};
+$font_heading_fallback: #{'"\{\{ font_heading.fallback_families \}\}"'};
+// colors
+$bg_color_1: #{'"\{\{ _bg_color_1 \}\}"'};
+$bg_color_2: #{'"\{\{ _bg_color_2 \}\}"'};
+$bar_color_1: #{'"\{\{ _bar_color_1 \}\}"'};
+// Announce Bar
+$announce_bg_color: #{'"\{\{ _announce_bg_color \}\}"'};
+$announce_text_color: #{'"\{\{ _announce_text_color \}\}"'};
+$announce_font_size: #{'"\{\{ _announce_font_size \}\}"'}px;
+$announce_bold: #{'"\{\{ _announce_bold \}\}"'};
+$announce_center: #{'"\{\{ _announce_center \}\}"'};
+//language version of store
+$lang: #{'"\{\{ shop.locale \}\}"'};

@@ -1,0 +1,47 @@
+/***************************************************/
+/******************* MEDIA QUERY *******************/
+/***************************************************/
+/* max: 300p*/
+@media only screen and (max-width: 300px) {
+    /*...*/
+}
+
+/* between: 300px to 599px */
+@media only screen and (min-width: 300px) and (max-width: 599px) {
+    /*...*/
+}
+
+/* Small devices (portrait tablets and large phones, 600px to 767px) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    /*...*/
+}
+
+/* Medium devices (landscape tablets, 768px and 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /*...*/
+}
+
+/* Large devices (laptops/desktops, 992px and 1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /*...*/
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width: 1299px) {
+    /*...*/
+}
+
+/* min: 1300px to 1502px */
+@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+    /*...*/
+}
+
+/* min: 1401px to 1502px */
+@media only screen and (min-width: 1401px) and (max-width: 1502px) {
+    /*...*/
+}
+
+/* min: 1503px */
+@media only screen and (min-width: 1503px) {
+    /*...*/
+}

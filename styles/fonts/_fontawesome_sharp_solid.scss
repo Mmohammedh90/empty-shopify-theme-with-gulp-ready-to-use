@@ -1,0 +1,18 @@
+:host,
+:root {
+    --fa-style-family-sharp: "Font Awesome 6 Sharp";
+    --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+}
+
+@font-face {
+    font-family: "Font Awesome 6 Sharp";
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url($fontawesome_font17) format("woff2"), url($fontawesome_font18) format("truetype");
+}
+
+.fa-solid,
+.fass {
+    font-weight: 900;
+}

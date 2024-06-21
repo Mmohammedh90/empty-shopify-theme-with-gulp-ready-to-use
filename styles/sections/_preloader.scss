@@ -1,0 +1,9 @@
+#preloader {
+    @include fullscreen_overlay;
+    background-color: $bg_color_1;
+    z-index: 99999;
+    text-align: center;
+    padding-top: 16em;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}

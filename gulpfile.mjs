@@ -10,11 +10,8 @@ const sass = gulpSass(dartSass);
 //Tasks
 export const css = () => gulp
 .src('styles/main.scss')
-.pipe(sass().on('error', sass.logError))
-.pipe(concat('test.css.liquid'))
 .pipe(prefix('last 2 version'))
 .pipe(replace('/*!#','/*'))
-.pipe(gulp.dest('test'))
 .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
 .pipe(replace('"\{\{', '{{'))
 .pipe(replace('\}\}"', '}}'))

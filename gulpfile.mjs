@@ -9,7 +9,7 @@ const sass = gulpSass(dartSass);
 
 //Tasks
 export const css = () => gulp
-.src('styles/main.scss')
+.src('src/main.scss')
 .pipe(prefix('last 2 version'))
 .pipe(replace('/*!#','/*'))
 .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
@@ -21,8 +21,11 @@ export const css = () => gulp
 .pipe(gulp.dest('theme-files/assets'))
 .pipe(browserSync.stream());
 
+export const js = () => gulp 
+.src('scripts/main.js')
+
 export const fontawesome = () => gulp
-.src('styles/font-awesome-pro.scss')
+.src('src/font-awesome-pro.scss')
 .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
 .pipe(concat('a--fontawesome-all.css'))
 .pipe(replace('../webfonts/',''))
@@ -35,8 +38,8 @@ export const server = () => {
     browserSync.init({
         notify:true
     });
-    gulp.watch('styles/**/*.scss', css);
-    gulp.watch('styles/**/*.scss', fontawesome);
+    gulp.watch('src/**/*.scss', css);
+    gulp.watch('src/**/*.scss', fontawesome);
 }
 
 export default gulp.series(css, fontawesome, server);

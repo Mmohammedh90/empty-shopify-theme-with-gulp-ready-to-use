@@ -37,7 +37,7 @@ export const js = () => gulp
 export const fontawesome = () => gulp
 .src('src/css/font-awesome-pro.scss')
 .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-.pipe(concat('a--fontawesome-all.css'))
+.pipe(concat('fontawesome.min.css'))
 .pipe(replace('../webfonts/',''))
 .pipe(gulp.dest('theme-files/assets'))
 .pipe(browserSync.stream());
@@ -71,7 +71,7 @@ export const clear = (done) => {
     });
     done();
   };
-  
+
 // repeating basic operations
 export const base = gulp.parallel(css, fontawesome, js, copy);
 

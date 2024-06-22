@@ -10,11 +10,13 @@
   "description": "",
   "devDependencies": {
     "browser-sync": "^3.0.2",
+    "del": "^7.1.0",
     "gulp": "^5.0.0",
     "gulp-autoprefixer": "^9.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-replace": "^1.1.4",
     "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
     "sass": "^1.77.6"
   }
 }

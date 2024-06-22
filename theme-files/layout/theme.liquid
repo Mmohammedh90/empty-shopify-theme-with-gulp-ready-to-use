@@ -283,9 +283,16 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+
+    {{ 'fontawesome.min.css' | asset_url | stylesheet_tag }}
+    {{ 'stylesheet.min.css' | asset_url | stylesheet_tag }}
+
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+    <div>
+      <i class="fa-solid fa-image fa-beat"></i>
+    </div>
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
@@ -355,5 +362,7 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <script src="{{ 'scripts.min.js' | asset_url }}" defer="defer"></script>
   </body>
 </html>

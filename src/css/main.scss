@@ -8,11 +8,6 @@
 /*!# Styling Universal sections (Header,Footer..etc)*/
 @import './sections/announce_bars';
 //
-// THIS NEED CAREFUL ENHANCEMENT
-@import './versions/old';
-
-//Media Query
-@import './versions/english_media';
 
 //Arabic version of store
 html[lang="ar"] {
